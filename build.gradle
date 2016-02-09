@@ -9,6 +9,8 @@
 
 // Apply the scala plugin to add support for Scala
 apply plugin: 'scala'
+apply plugin: 'java'
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -24,6 +26,8 @@ dependencies {
 
     // We use Scalatest for testing our library
     testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:2.0.2-beta'
+    testCompile 'org.powermock:powermock-api-mockito:1.6.4'
     testCompile 'org.scalatest:scalatest_2.11:2.2.5'
     testRuntime 'org.scala-lang.modules:scala-xml_2.11:1.0.5'
 }
